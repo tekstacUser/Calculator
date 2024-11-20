@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copy the JAR file (replace "your-app.jar" with your actual JAR file name)
-COPY target/Calculator-0.0.1-SNAPSHOT.jar /app/ROOT.jar
+COPY target/calculator.jar /app/ROOT.jar
 
 # Run the Java application
 ENTRYPOINT ["java", "-jar", "/app/ROOT.jar"]
